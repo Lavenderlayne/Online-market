@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monobank Market</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Купуйте якісні товари в Mono Market">
+    <title>Mono Market</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Маркет Monobank</h1>
-        <div id="cart">
-            <span>Кошик (<span id="cart-count">0</span>)</span>
-        </div>
+        <h1>Mono Market</h1>
+        <button id="cartButton">Кошик (<span id="cartCount">0</span>)</button>
     </header>
-    <main>
-        <div class="product-list" id="product-list">
-            <!-- Карточки товарів будуть згенеровані через JS -->
+
+    <div id="controls">
+        <input type="text" id="searchInput" placeholder="Пошук товарів...">
+        <select id="sortSelect">
+            <option value="name">Сортувати за назвою</option>
+            <option value="price">Сортувати за ціною</option>
+        </select>
+        <select id="categorySelect">
+            <option value="">Всі категорії</option>
+        </select>
+    </div>
+    <main id="productsContainer"></main>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h2>Ваш кошик</h2>
+            <ul id="cartItems"></ul>
+            <p>Загальна сума: <span id="totalPrice">0</span> грн</p>
+            <button id="clearCart">Очистити кошик</button>
         </div>
-    </main>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
