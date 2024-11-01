@@ -1,11 +1,15 @@
-let cart = JSON.parse(localStorage.getItem('cart')) || {};
+let cart = {};
 let products = [];
 
 // Load products from JSON
 async function loadProducts() {
     console.log('Завантаження продуктів...');
     try {
-        const response = await fetch('products.json');
+        const response = await fetch('json/machinery.json');
+        //const response = await fetch('json/forconstruction.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         products = await response.json();
         populateCategories(products);
         displayProducts(products);
@@ -17,14 +21,15 @@ async function loadProducts() {
 // Populate categories
 function populateCategories(products) {
     const categorySelect = document.getElementById('categorySelect');
-    const categories = [...new Set(products.map(product => product.category))];
-
-    categories.forEach(category => {
-        const option = document.createElement('option');
-        option.value = category;
-        option.textContent = category;
-        categorySelect.appendChild(option);
-    });
+    if (categorySelect) {
+        const categories = [...new Set(products.map(product => product.category))];
+        categories.forEach(category => {
+            const option = document.createElement('option');
+            option.value = category;
+            option.textContent = category;
+            categorySelect.appendChild(option);
+        });
+    }
 }
 
 // Filter by category
@@ -39,6 +44,8 @@ function filterByCategory() {
 // Display products
 function displayProducts(productsToShow) {
     const productsContainer = document.getElementById('productsContainer');
+    if (!productsContainer) return;
+
     productsContainer.innerHTML = ''; // Clear container before displaying
 
     if (productsToShow.length === 0) {
@@ -62,7 +69,10 @@ function displayProducts(productsToShow) {
 // Update cart count
 function updateCartCount() {
     const cartCount = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
-    document.getElementById('cartCount').textContent = cartCount;
+    const cartCountElement = document.getElementById('cartCount');
+    if (cartCountElement) {
+        cartCountElement.textContent = cartCount;
+    }
     saveCart();
 }
 
@@ -81,6 +91,8 @@ function addToCart(name, price) {
 function showCart() {
     const cartItems = document.getElementById('cartItems');
     const totalPriceElement = document.getElementById('totalPrice');
+    if (!cartItems || !totalPriceElement) return;
+
     cartItems.innerHTML = '';
     let totalPrice = 0;
 
@@ -109,25 +121,25 @@ function removeFromCart(name) {
 }
 
 // Clear cart
-document.getElementById('clearCart').addEventListener('click', () => {
+document.getElementById('clearCart')?.addEventListener('click', () => {
     cart = {};
     updateCartCount();
     showCart();
 });
 
 // Close modal
-document.getElementById('closeModal').addEventListener('click', () => {
+document.getElementById('closeModal')?.addEventListener('click', () => {
     document.getElementById('cartModal').style.display = 'none';
 });
 
 // Search and sort handling
-document.getElementById('searchInput').addEventListener('input', (e) => {
+document.getElementById('searchInput')?.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchTerm));
     displayProducts(filteredProducts);
 });
 
-document.getElementById('sortSelect').addEventListener('change', (e) => {
+document.getElementById('sortSelect')?.addEventListener('change', (e) => {
     const sortBy = e.target.value;
     const sortedProducts = [...products].sort((a, b) => {
         if (sortBy === 'name') {
@@ -139,7 +151,7 @@ document.getElementById('sortSelect').addEventListener('change', (e) => {
     displayProducts(sortedProducts);
 });
 
-document.getElementById('categorySelect').addEventListener('change', filterByCategory);
+document.getElementById('categorySelect')?.addEventListener('change', filterByCategory);
 
 // Save cart to local storage
 function saveCart() {
@@ -148,15 +160,22 @@ function saveCart() {
 
 // Load cart from local storage
 function loadCart() {
-    const storedCart = JSON.parse(localStorage.getItem('cart'));
-    if (storedCart) {
-        cart = storedCart;
-        updateCartCount();
+    try {
+        const storedCart = JSON.parse(localStorage.getItem('cart'));
+        if (storedCart) {
+            cart = storedCart;
+            updateCartCount();
+        }
+    } catch (error) {
+        cart = {};
+        console.error('Помилка при завантаженні кошика:', error);
     }
 }
 
 // Load products and cart
-loadProducts();
-loadCart();
+document.addEventListener('DOMContentLoaded', () => {
+    loadProducts();
+    loadCart();
+});
 
-document.getElementById('cartButton').addEventListener('click', showCart);
+document.getElementById('cartButton')?.addEventListener('click', showCart);
