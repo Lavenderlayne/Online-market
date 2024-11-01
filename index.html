@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Купуйте якісні товари в Mono Market">
-    <title>Mono Market</title>
+    <title>Market</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mono Market</h1>
+        <h1>Market</h1>
         <button id="cartButton">Кошик (<span id="cartCount">0</span>)</button>
     </header>
 
@@ -22,11 +22,16 @@
         <select id="categorySelect">
             <option value="">Всі категорії</option>
         </select>
+        <input type="number" id="minPrice" placeholder="Мінімальна ціна" />
+        <input type="number" id="maxPrice" placeholder="Максимальна ціна" />
+        <button id="filterButton">Фільтрувати</button>
     </div>
+
     <main id="productsContainer"></main>
-    <div id="cartModal" class="modal">
+
+    <div id="cartModal" class="modal" style="display: none;"> <!-- Додаємо style для приховування -->
         <div class="modal-content">
-            <span id="closeModal">&times;</span>
+            <span id="closeModal" style="cursor: pointer;">&times;</span> <!-- Додаємо стиль для курсора -->
             <h2>Ваш кошик</h2>
             <ul id="cartItems"></ul>
             <p>Загальна сума: <span id="totalPrice">0</span> грн</p>

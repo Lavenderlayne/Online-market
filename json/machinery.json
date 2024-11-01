@@ -100,5 +100,419 @@
         "price": 6999,
         "category": "Електроніка",
         "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_709_5007_0_1_YwfqNh_Small.webp"
+    },
+    {
+        "name": "Смартфон Xiaomi Redmi Note 12 Pro",
+        "price": 14999,
+        "category": "Електроніка",
+        "image": "https://content1.rozetka.com.ua/goods/images/big/404246668.jpg"
+    },
+    {
+        "name": "Ноутбук ASUS ZenBook 14",
+        "price": 38999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/460123456.jpg"
+    },
+    {
+        "name": "Телевізор Samsung QLED 55\"",
+        "price": 59999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/405123456.jpg"
+    },
+    {
+        "name": "Ігрова приставка Xbox Series X",
+        "price": 24999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/404567890.jpg"
+    },
+    {
+        "name": "Фітнес-трекер Garmin Venu 2",
+        "price": 16999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/405987654.jpg"
+    },
+    {
+        "name": "Смарт-годинник Apple Watch Series 8",
+        "price": 17999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403456789.jpg"
+    },
+    {
+        "name": "Планшет Samsung Galaxy Tab S8",
+        "price": 59999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234567.jpg"
+    },
+    {
+        "name": "Смартфон OnePlus 11",
+        "price": 56999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Монітор LG UltraGear 27",
+        "price": 19999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/400987654.jpg"
+    },
+    {
+        "name": "Навушники Apple AirPods Pro",
+        "price": 8999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/400123456.jpg"
+    },
+    {
+        "name": "Електросамокат Xiaomi Mi Scooter 3",
+        "price": 24999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403456890.jpg"
+    },
+    {
+        "name": "Камера Nikon Z50",
+        "price": 45999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234567.jpg"
+    },
+    {
+        "name": "Клавіатура Logitech MX Keys",
+        "price": 4999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402567890.jpg"
+    },
+    {
+        "name": "Мишка Logitech G502 HERO",
+        "price": 1999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402987654.jpg"
+    },
+    {
+        "name": "Портативна колонка JBL Flip 6",
+        "price": 5999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401567890.jpg"
+    },
+    {
+        "name": "Зовнішній HDD Seagate 2TB",
+        "price": 3499,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403234567.jpg"
+    },
+    {
+        "name": "Смарт-колонка Amazon Echo Dot 4",
+        "price": 3999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Монітор BenQ PD3220U",
+        "price": 23999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Безпровідні навушники Bose QuietComfort 45",
+        "price": 12999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Планшет Huawei MatePad Pro",
+        "price": 29999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403234678.jpg"
+    },
+    {
+        "name": "Смарт-годинник Garmin Forerunner 245",
+        "price": 9999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/404567890.jpg"
+    },
+    {
+        "name": "Смартфон Vivo V21",
+        "price": 19999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Веб-камера Logitech C920",
+        "price": 3299,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403456789.jpg"
+    },
+    {
+        "name": "Портативний зарядний пристрій Anker PowerCore",
+        "price": 1999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Смарт-колонка Xiaomi Mi AI Speaker",
+        "price": 1999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403234678.jpg"
+    },
+    {
+        "name": "Зовнішній SSD Samsung T7 1TB",
+        "price": 6999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Мишка SteelSeries Rival 3",
+        "price": 1299,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403456789.jpg"
+    },
+    {
+        "name": "Смартфон Motorola Moto G Power",
+        "price": 10999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Клавіатура Razer BlackWidow V3",
+        "price": 3499,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403234567.jpg"
+    },
+    {
+        "name": "Графічна карта NVIDIA GeForce RTX 3060",
+        "price": 24999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Проектор Epson Home Cinema 2150",
+        "price": 17999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403234678.jpg"
+    },
+    {
+        "name": "Смартфон Samsung Galaxy S24 Ultra",
+        "price": 68399,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/398085659.jpg"
+    },
+    {
+        "name": "Ноутбук HP Pavilion 15",
+        "price": 34999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/459057256.jpg"
+    },
+    {
+        "name": "Телевізор LG OLED55C1",
+        "price": 44999,
+        "category": "Електроніка",
+        "image": "https://ireland.apollo.olxcdn.com/v1/files/dumqzqb8adw3-UA/image;s=1000x700"
+    },
+    {
+        "name": "Ігрова приставка Sony PlayStation 5",
+        "price": 24999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/391885925.jpg"
+    },
+    {
+        "name": "Фітнес-трекер Xiaomi Mi Band 8",
+        "price": 1200,
+        "category": "Електроніка",
+        "image": "https://content1.rozetka.com.ua/goods/images/big/367323203.jpg"
+    },
+    {
+        "name": "Смарт-годинник Samsung Galaxy Watch 6",
+        "price": 16499,
+        "category": "Електроніка",
+        "image": "https://content1.rozetka.com.ua/goods/images/big/353761566.jpg"
+    },
+    {
+        "name": "Планшет Apple iPad Pro 11 2024 M4",
+        "price": 129999,
+        "category": "Електроніка",
+        "image": "https://ielectrostore.com.ua/wp-content/uploads/2024/05/ipad_pro_11_m4_cellular_space_black.png"
+    },
+    {
+        "name": "Смартфон iPhone 15 Pro",
+        "price": 90999,
+        "category": "Електроніка",
+        "image": "https://img.ktc.ua/img/base/1_505/3/583253.jpg"
+    },
+    {
+        "name": "Монітор Samsung Odyssey Neo G9 G95NC",
+        "price": 84999,
+        "category": "Електроніка",
+        "image": "https://content2.rozetka.com.ua/goods/images/big/480181775.jpg"
+    },
+    {
+        "name": "Навушники Sony WH-1000XM5",
+        "price": 16989,
+        "category": "Електроніка",
+        "image": "https://gamezone.com.ua/media/gamezone/gamezone/galley/image/S/O/Y/media_240920_140525.webp"
+    },
+    {
+        "name": "Електросамокат Ninebot by Segway GT2P Black",
+        "price": 135999,
+        "category": "Електроніка",
+        "image": "https://hotline.ua/img/tx/492/4923421421.jpg"
+    },
+    {
+        "name": "GoPro HERO 7 Black",
+        "price": 25000,
+        "category": "Електроніка",
+        "image": "https://content2.rozetka.com.ua/goods/images/big/12541690.jpg"
+    },
+    {
+        "name": "SSD накопичувач OWC 32TB Accelsior 8M2 PCIe 4.0 Storage Card",
+        "price": 278294,
+        "category": "Електроніка",
+        "image": "https://dreamtech.ua/image/cache/catalog/godox/images/multiple_images/images1500x1500/x1637670691_IMG_1647482-74x74.jpg.pagespeed.ic.PjRK-eypSA.jpg"
+    },
+    {
+        "name": "Графічний планшет WACOM Cintiq Pro 27",
+        "price": 224979,
+        "category": "Електроніка",
+        "image": "https://img0.itbox.ua/1600x1600/prod_img/0/U0960880_big_1725892957.webp"
+    },
+    {
+        "name": "Ноутбук Apple MacBook Pro 16",
+        "price": 331911,
+        "category": "Електроніка",
+        "image": "https://smartmag.biz.ua/content/images/32/1720x1720l80br0/67265892621190.webp"
+    },
+    {
+        "name": "Зарядний пристрій Goal Zero New Sherpa 100AC Power Bank",
+        "price": 21999,
+        "category": "Електроніка",
+        "image": "https://trekman.com.ua/content/images/5/800x800l80mc0/74485083154720.webp"
+    },
+    {
+        "name": "Миша RAZER Cobra Pro White ",
+        "price": 6999,
+        "category": "Електроніка",
+        "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_709_5007_0_1_YwfqNh_Small.webp"
+    },
+    {
+        "name": "Велосипед Trek Marlin 7",
+        "price": 29999,
+        "category": "Спорт",
+        "image": "https://content.rozetka.com.ua/goods/images/big/400123456.jpg"
+    },
+    {
+        "name": "Спортивні кросівки Nike Air Max",
+        "price": 5999,
+        "category": "Взуття",
+        "image": "https://content.rozetka.com.ua/goods/images/big/400456789.jpg"
+    },
+    {
+        "name": "Швейцарський ніж Victorinox",
+        "price": 899,
+        "category": "Аксесуари",
+        "image": "https://content.rozetka.com.ua/goods/images/big/400987654.jpg"
+    },
+    {
+        "name": "Сумка для ноутбука HP",
+        "price": 1999,
+        "category": "Аксесуари",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234567.jpg"
+    },
+    {
+        "name": "Футболка Adidas",
+        "price": 999,
+        "category": "Одежда",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Чохол для смартфона UAG",
+        "price": 599,
+        "category": "Аксесуари",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401567890.jpg"
+    },
+    {
+        "name": "Настільна лампа IKEA",
+        "price": 799,
+        "category": "Меблі",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402987654.jpg"
+    },
+    {
+        "name": "Книга 'Код да Вінчі'",
+        "price": 499,
+        "category": "Книги",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Штатив для фотоапарата",
+        "price": 2999,
+        "category": "Аксесуари",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402567890.jpg"
+    },
+    {
+        "name": "Супутниковий навігатор Garmin",
+        "price": 12999,
+        "category": "Електроніка",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403234678.jpg"
+    },
+    {
+        "name": "Кухонний комбайн Bosch",
+        "price": 3499,
+        "category": "Кухня",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234567.jpg"
+    },
+    {
+        "name": "Водяний фільтр Brita",
+        "price": 799,
+        "category": "Кухня",
+        "image": "https://content.rozetka.com.ua/goods/images/big/403456789.jpg"
+    },
+    {
+        "name": "Гамак для відпочинку",
+        "price": 1999,
+        "category": "Сад",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Портативний BBQ гриль",
+        "price": 2999,
+        "category": "Кухня",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Тенісний ракетка Wilson",
+        "price": 1999,
+        "category": "Спорт",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Кубок для нагород",
+        "price": 699,
+        "category": "Спорт",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402123456.jpg"
+    },
+    {
+        "name": "Рюкзак Deuter",
+        "price": 2499,
+        "category": "Аксесуари",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Скакалка",
+        "price": 499,
+        "category": "Спорт",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402987654.jpg"
+    },
+    {
+        "name": "Фітнес-мат",
+        "price": 799,
+        "category": "Спорт",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402345678.jpg"
+    },
+    {
+        "name": "Різдвяна ялинка",
+        "price": 2999,
+        "category": "Декор",
+        "image": "https://content.rozetka.com.ua/goods/images/big/401234678.jpg"
+    },
+    {
+        "name": "Картридж для принтера HP",
+        "price": 899,
+        "category": "Канцелярія",
+        "image": "https://content.rozetka.com.ua/goods/images/big/402567890.jpg"
     }
 ]
