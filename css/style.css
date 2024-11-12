@@ -1,0 +1,239 @@
+/* Основні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Світло-сірий фон */
+    color: #444; /* Темно-сірий текст */
+    line-height: 1.6;
+}
+
+/* Заголовок */
+header {
+    background-color: #222; /* Темний фон */
+    color: #fff; /* Білий текст */
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 3px solid #555; /* Лінія внизу */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Кнопки */
+button {
+    padding: 14px 30px;
+    font-size: 1rem;
+    border: 2px solid #444; /* Трохи світліший колір */
+    background-color: transparent;
+    color: #444; /* Темний текст */
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+    color: #fff;
+    transform: scale(1.05); /* Ефект збільшення */
+}
+
+/* Фільтри */
+#controls {
+    margin: 30px 8%;
+    background: #fff; /* Білий фон для фільтрів */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#toggleFilters {
+    background-color: #444; /* Темний фон */
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+}
+
+#toggleFilters:hover {
+    background-color: #333; /* Темніший при ховері */
+}
+
+#filterOptions {
+    display: none;
+    margin-top: 25px;
+}
+
+.filter-section {
+    margin-bottom: 25px;
+}
+
+.filter-label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.slider {
+    width: 100%;
+    margin: 12px 0;
+    background-color: #ddd; /* Світло-сірий */
+    border-radius: 10px;
+}
+
+input[type="number"] {
+    width: 90px;
+    padding: 6px;
+    margin-left: 12px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Стилі для товарів */
+#productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin: 30px 8%;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 12px 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.product p {
+    color: #777; /* Світло-сірий текст */
+    font-size: 1.1rem;
+}
+
+.product button {
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #333;
+    transform: scale(1.05); /* Ефект збільшення */
+}
+
+/* Модальне вікно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#closeModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+#cartItems {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+#cartItems li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+#totalPrice {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #222; /* Темно-сірий */
+}
+
+#clearCart {
+    background-color: #444;
+    color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#clearCart:hover {
+    background-color: #333;
+    transform: scale(1.05); /* Ефект збільшення */
+}
+
+/* Анімація для відкриття модального вікна */
+.modal.open {
+    display: flex;
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
