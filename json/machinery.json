@@ -1,104 +1,82 @@
 [
     {
-        "name": "Смартфон Samsung Galaxy S24 Ultra",
-        "price": 68399,
-        "category": "Електроніка",
-        "image": "https://content.rozetka.com.ua/goods/images/big/398085659.jpg"
+        "id": 1,
+        "name": "Cyberpunk 2077",
+        "price": 1099,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg",
+        "description": "A dystopian open-world RPG where you play as a mercenary in the neon-lit streets of Night City."
     },
     {
-        "name": "Ноутбук HP Pavilion 15",
-        "price": 34999,
-        "category": "Електроніка",
-        "image": "https://content.rozetka.com.ua/goods/images/big/459057256.jpg"
+        "id": 2,
+        "name": "Red Dead Redemption 2",
+        "price": 1499,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg",
+        "description": "An epic story of outlaws and the Wild West, with breathtaking visuals and a deep narrative."
     },
     {
-        "name": "Телевізор LG OLED55C1",
-        "price": 44999,
-        "category": "Електроніка",
-        "image": "https://ireland.apollo.olxcdn.com/v1/files/dumqzqb8adw3-UA/image;s=1000x700"
+        "id": 3,
+        "name": "Elden Ring",
+        "price": 1599,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+        "description": "A fantasy action RPG that blends the expertise of FromSoftware with a vast, open world and a rich lore."
     },
     {
-        "name": "Ігрова приставка Sony PlayStation 5",
-        "price": 24999,
-        "category": "Електроніка",
-        "image": "https://content.rozetka.com.ua/goods/images/big/391885925.jpg"
+        "id": 4,
+        "name": "Hogwarts Legacy",
+        "price": 999,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/990080/header.jpg",
+        "description": "Step into the wizarding world and live out your own magical adventure as a young wizard at Hogwarts."
     },
     {
-        "name": "Фітнес-трекер Xiaomi Mi Band 8",
-        "price": 1200,
-        "category": "Електроніка",
-        "image": "https://content1.rozetka.com.ua/goods/images/big/367323203.jpg"
+        "id": 5,
+        "name": "Among Us",
+        "price": 120,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/945360/header.jpg",
+        "description": "A multiplayer social deduction game where players work together to complete tasks while trying to identify the Impostor."
     },
     {
-        "name": "Смарт-годинник Samsung Galaxy Watch 6",
-        "price": 16499,
-        "category": "Електроніка",
-        "image": "https://content1.rozetka.com.ua/goods/images/big/353761566.jpg"
+        "id": 6,
+        "name": "The Witcher 3: Wild Hunt",
+        "price": 249,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/292030/header.jpg",
+        "description": "A mature, story-driven RPG featuring Geralt of Rivia, a monster hunter on a quest to find his adopted daughter."
     },
     {
-        "name": "Планшет Apple iPad Pro 11 2024 M4",
-        "price": 129999,
-        "category": "Електроніка",
-        "image": "https://ielectrostore.com.ua/wp-content/uploads/2024/05/ipad_pro_11_m4_cellular_space_black.png"
+        "id": 7,
+        "name": "Baldur's Gate 3",
+        "price": 2999,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
+        "description": "A deep, story-rich RPG set in the Dungeons & Dragons universe with tactical combat and cooperative multiplayer."
     },
     {
-        "name": "Смартфон iPhone 15 Pro",
-        "price": 90999,
-        "category": "Електроніка",
-        "image": "https://img.ktc.ua/img/base/1_505/3/583253.jpg"
+        "id": 8,
+        "name": "Starfield",
+        "price": 2499,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1716740/header.jpg",
+        "description": "An open-world space exploration RPG where you create your own character and explore the galaxy."
     },
     {
-        "name": "Монітор Samsung Odyssey Neo G9 G95NC",
-        "price": 84999,
-        "category": "Електроніка",
-        "image": "https://content2.rozetka.com.ua/goods/images/big/480181775.jpg"
+        "id": 9,
+        "name": "Assassin's Creed Mirage",
+        "price": 1499,
+        "category": "Ігри",
+        "image": "https://img-api.mac4ever.com/800/0/5d48aadd8d_assassin-s-creed-mirage-sur-iphone-et-ipad-au-moins-de-juin.webp",
+        "description": "A return to the roots of the Assassin's Creed franchise with a stealth-focused action adventure set in Baghdad."
     },
     {
-        "name": "Навушники Sony WH-1000XM5",
-        "price": 16989,
-        "category": "Електроніка",
-        "image": "https://gamezone.com.ua/media/gamezone/gamezone/galley/image/S/O/Y/media_240920_140525.webp"
-    },
-    {
-        "name": "Електросамокат Ninebot by Segway GT2P Black",
-        "price": 135999,
-        "category": "Електроніка",
-        "image": "https://hotline.ua/img/tx/492/4923421421.jpg"
-    },
-    {
-        "name": "GoPro HERO 7 Black",
-        "price": 25000,
-        "category": "Електроніка",
-        "image": "https://content2.rozetka.com.ua/goods/images/big/12541690.jpg"
-    },
-    {
-        "name": "SSD накопичувач OWC 32TB Accelsior 8M2 PCIe 4.0 Storage Card",
-        "price": 278294,
-        "category": "Електроніка",
-        "image": "https://dreamtech.ua/image/cache/catalog/godox/images/multiple_images/images1500x1500/x1637670691_IMG_1647482-74x74.jpg.pagespeed.ic.PjRK-eypSA.jpg"
-    },
-    {
-        "name": "Графічний планшет WACOM Cintiq Pro 27",
-        "price": 224979,
-        "category": "Електроніка",
-        "image": "https://img0.itbox.ua/1600x1600/prod_img/0/U0960880_big_1725892957.webp"
-    },
-    {
-        "name": "Ноутбук Apple MacBook Pro 16",
-        "price": 331911,
-        "category": "Електроніка",
-        "image": "https://smartmag.biz.ua/content/images/32/1720x1720l80br0/67265892621190.webp"
-    },
-    {
-        "name": "Зарядний пристрій Goal Zero New Sherpa 100AC Power Bank",
-        "price": 21999,
-        "category": "Електроніка",
-        "image": "https://trekman.com.ua/content/images/5/800x800l80mc0/74485083154720.webp"
-    },
-    {
-        "name": "Миша RAZER Cobra Pro White ",
-        "price": 6999,
-        "category": "Електроніка",
-        "image": "https://files.foxtrot.com.ua/PhotoNew/img_0_709_5007_0_1_YwfqNh_Small.webp"
+        "id": 10,
+        "name": "Resident Evil 4 Remake",
+        "price": 999,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg",
+        "description": "A modernized remake of the classic survival horror game with overhauled graphics and gameplay."
     }
 ]

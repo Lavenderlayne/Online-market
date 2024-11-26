@@ -3,7 +3,6 @@ let products = [];
 
 // Load products from JSON
 async function loadProducts() {
-    console.log('Завантаження продуктів...');
     try {
         const response = await fetch('json/machinery.json');
         if (!response.ok) {
@@ -12,7 +11,7 @@ async function loadProducts() {
         products = await response.json();
         initializePage();
     } catch (error) {
-        console.error('Помилка завантаження продуктів:', error);
+        console.error('Error loading products:', error);
     }
 }
 
@@ -39,8 +38,8 @@ function populateCategories(products) {
 // Filter by category
 function filterByCategory() {
     const selectedCategory = document.getElementById('categorySelect').value;
-    const filteredProducts = selectedCategory 
-        ? products.filter(product => product.category === selectedCategory) 
+    const filteredProducts = selectedCategory
+        ? products.filter(product => product.category === selectedCategory)
         : products;
     displayProducts(filteredProducts);
 }
@@ -60,7 +59,7 @@ function displayProducts(productsToShow) {
 
     productsContainer.innerHTML = ''; // Clear previous products
     if (productsToShow.length === 0) {
-        productsContainer.innerHTML = '<p>Товари не знайдено.</p>';
+        productsContainer.innerHTML = '<p>No products found.</p>';
         return;
     }
 
@@ -71,13 +70,13 @@ function displayProducts(productsToShow) {
             <a href="product.html?id=${product.id}">
                 <img src="${product.image}" alt="${product.name}" />
                 <h2>${product.name}</h2>
-                <p>Ціна: ${product.price} грн</p>
+                <p>${product.description || 'No description'}</p>
+                <p>Price: ${product.price} UAH</p>
             </a>
         `;
         productsContainer.appendChild(productDiv);
     });
 }
-
 
 // Update cart count
 function updateCartCount() {
@@ -113,14 +112,14 @@ function showCart() {
         const item = cart[name];
         const li = document.createElement('li');
         li.innerHTML = `
-            ${name} - ${item.price} грн x ${item.quantity} = ${item.totalPrice} грн
-            <button onclick="removeFromCart('${name}')">Видалити</button>
+            ${name} - ${item.price} UAH x ${item.quantity} = ${item.totalPrice} UAH
+            <button onclick="removeFromCart('${name}')">Remove</button>
         `;
         cartItems.appendChild(li);
         totalPrice += item.totalPrice;
     });
 
-    totalPriceElement.textContent = `Сума: ${totalPrice} грн`;
+    totalPriceElement.textContent = `Total: ${totalPrice} UAH`;
     document.getElementById('cartModal').style.display = 'block';
 }
 
@@ -205,7 +204,7 @@ function loadCart() {
         }
     } catch (error) {
         cart = {};
-        console.error('Помилка при завантаженні кошика:', error);
+        console.error('Error loading cart:', error);
     }
 }
 
@@ -213,4 +212,3 @@ function loadCart() {
 document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
 });
-

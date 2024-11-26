@@ -8,13 +8,45 @@
 </head>
 <body>
     <header>
-        <h1 id="productName">Назва товару</h1>
+        <div class="header-container">
+            <a href="/" class="logo">Магазин</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Головна</a></li>
+                    <li><a href="#" id="cartLink">Кошик (<span id="cartCount">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <img id="productImage" src="" alt="Зображення товару">
-        <p id="productPrice">Ціна: грн</p>
-        <p id="productCategory">Категорія: </p>
+    
+    <main class="product-detail">
+        <div class="product-info">
+            <img id="productImage" src="" alt="Зображення товару">
+            <div class="product-description">
+                <h1 id="productName">Назва товару</h1>
+                <p id="productPrice">Ціна: грн</p>
+                <p id="productCategory">Категорія: </p>
+                <p id="productDescription">Опис відсутній</p>
+                <button id="addToCartButton" class="btn-add-to-cart">Додати до кошика</button>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин. Усі права захищено.</p>
+    </footer>
+
+    <!-- Кошик Модальне вікно -->
+    <div id="cartModal" class="modal steam-modal">
+        <div class="modal-content steam-modal-content">
+            <span id="closeModal" class="close-modal">&times;</span>
+            <h2>Ваш кошик</h2>
+            <ul id="cartItems" class="steam-cart-items"></ul>
+            <p class="total-price">Загальна сума: <span id="totalPrice">0</span> грн</p>
+            <button id="clearCart" class="steam-button">Очистити кошик</button>
+        </div>
+    </div>
+
     <script>
         // Зчитування параметра id з URL
         const params = new URLSearchParams(window.location.search);
@@ -36,6 +68,7 @@
                     document.getElementById('productImage').alt = product.name;
                     document.getElementById('productPrice').textContent = `Ціна: ${product.price} грн`;
                     document.getElementById('productCategory').textContent = `Категорія: ${product.category}`;
+                    document.getElementById('productDescription').textContent = product.description || 'Опис відсутній';
                 } else {
                     document.body.innerHTML = '<p>Товар не знайдено.</p>';
                 }
@@ -45,7 +78,62 @@
             }
         }
 
-        loadProductDetails();
+        // Викликаємо функцію для завантаження даних товару
+        if (productId) {
+            loadProductDetails();
+        } else {
+            document.body.innerHTML = '<p>Невірний ідентифікатор товару.</p>';
+        }
+
+        // Додавання товару до кошика
+        const cart = [];
+        const cartCountElement = document.getElementById('cartCount');
+        const cartModal = document.getElementById('cartModal');
+        const closeModal = document.getElementById('closeModal');
+        const cartLink = document.getElementById('cartLink');
+        const cartItemsElement = document.getElementById('cartItems');
+        const totalPriceElement = document.getElementById('totalPrice');
+        const clearCartButton = document.getElementById('clearCart');
+
+        document.getElementById('addToCartButton')?.addEventListener('click', () => {
+            const productName = document.getElementById('productName').textContent;
+            const productPrice = parseFloat(document.getElementById('productPrice').textContent.replace('Ціна: ', '').replace(' грн', ''));
+            
+            const cartItem = { name: productName, price: productPrice };
+            cart.push(cartItem);
+            updateCartUI();
+            alert('Товар додано до кошика');
+        });
+
+        // Відкриття модального вікна
+        cartLink.addEventListener('click', () => {
+            cartModal.style.display = 'block';
+        });
+
+        // Закриття модального вікна
+        closeModal.addEventListener('click', () => {
+            cartModal.style.display = 'none';
+        });
+
+        // Оновлення UI кошика
+        function updateCartUI() {
+            cartCountElement.textContent = cart.length;
+            cartItemsElement.innerHTML = '';
+            let total = 0;
+            cart.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - ${item.price} грн`;
+                cartItemsElement.appendChild(li);
+                total += item.price;
+            });
+            totalPriceElement.textContent = total.toFixed(2);
+        }
+
+        // Очищення кошика
+        clearCartButton.addEventListener('click', () => {
+            cart.length = 0;
+            updateCartUI();
+        });
     </script>
 </body>
 </html>
