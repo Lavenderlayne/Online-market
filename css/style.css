@@ -8,7 +8,7 @@
 
 body {
     background-color: #181818;
-    color: #e3e3e3;
+    color: #f0f0f0;
     line-height: 1.6;
 }
 
@@ -27,7 +27,7 @@ header {
 
 /* Логотип */
 .logo {
-    color: #e3e3e3;
+    color: #f4d03f; /* Жовтий */
     font-size: 2rem;
     text-decoration: none;
 }
@@ -42,7 +42,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #e3e3e3;
+    color: #f0f0f0; /* Білий */
     text-decoration: none;
     font-size: 1rem;
     text-transform: uppercase;
@@ -52,7 +52,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #5c5c5c;
+    color: #e74c3c; /* Червоний */
 }
 
 /* Кнопки */
@@ -70,7 +70,7 @@ button, .steam-button {
 }
 
 button:hover, .steam-button:hover {
-    background-color: #5c5c5c;
+    background-color: #e74c3c; /* Червоний */
     transform: scale(1.05);
 }
 
@@ -96,7 +96,7 @@ button:hover, .steam-button:hover {
 }
 
 #toggleFilters:hover {
-    background-color: #333;
+    background-color: #f4d03f; /* Жовтий */
 }
 
 /* Стилі для товарів */
@@ -130,7 +130,7 @@ button:hover, .steam-button:hover {
 .product h3 {
     margin: 12px 0;
     font-size: 1.3rem;
-    color: #e3e3e3;
+    color: #f4d03f; /* Жовтий */
 }
 
 .product p {
@@ -153,7 +153,7 @@ button:hover, .steam-button:hover {
 }
 
 .product button:hover {
-    background-color: #333;
+    background-color: #f4d03f; /* Жовтий */
     transform: scale(1.05);
 }
 
@@ -178,6 +178,7 @@ button:hover, .steam-button:hover {
 .product-description h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    color: #f4d03f; /* Жовтий */
 }
 
 .product-description p {
