@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Деталі товару</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header-container">
-            <a href="/" class="logo">Магазин</a>
-            <nav>
-                <ul>
-                    <li><a href="/">Головна</a></li>
-                    <li><a href="#" id="cartLink">Кошик (<span id="cartCount">0</span>)</a></li>
-                </ul>
-            </nav>
+    <header class="steam-header">
+        <div class="logo">
+
+            <img src="/images/pixel-logo.png" alt="Steam Logo" class="steam-logo">
+            <h1><a href="/" class="logo">Pixel Shop</a></h1>
         </div>
+        <nav>
+            <button id="cartButton" class="steam-button">Кошик (<span id="cartCount">0</span>)</button>
+        </nav>
     </header>
-    
     <main class="product-detail">
         <div class="product-info">
             <img id="productImage" src="" alt="Зображення товару">
@@ -90,7 +90,7 @@
         const cartCountElement = document.getElementById('cartCount');
         const cartModal = document.getElementById('cartModal');
         const closeModal = document.getElementById('closeModal');
-        const cartLink = document.getElementById('cartLink');
+        const cartButton = document.getElementById('cartButton');
         const cartItemsElement = document.getElementById('cartItems');
         const totalPriceElement = document.getElementById('totalPrice');
         const clearCartButton = document.getElementById('clearCart');
@@ -98,7 +98,7 @@
         document.getElementById('addToCartButton')?.addEventListener('click', () => {
             const productName = document.getElementById('productName').textContent;
             const productPrice = parseFloat(document.getElementById('productPrice').textContent.replace('Ціна: ', '').replace(' грн', ''));
-            
+
             const cartItem = { name: productName, price: productPrice };
             cart.push(cartItem);
             updateCartUI();
@@ -106,7 +106,7 @@
         });
 
         // Відкриття модального вікна
-        cartLink.addEventListener('click', () => {
+        cartButton.addEventListener('click', () => {
             cartModal.style.display = 'block';
         });
 
@@ -136,4 +136,5 @@
         });
     </script>
 </body>
+
 </html>
