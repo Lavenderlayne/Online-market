@@ -452,3 +452,11 @@ header nav ul li a:hover {
     transform: translateY(1px);
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #c3c3c3;
+}
