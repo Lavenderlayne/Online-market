@@ -78,7 +78,7 @@ function loadCart() {
         const storedCart = JSON.parse(localStorage.getItem('cart'));
         if (storedCart) {
             cart = storedCart;
-            
+
             updateCartCount();
         }
     } catch (error) {
