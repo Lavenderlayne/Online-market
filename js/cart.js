@@ -98,3 +98,4 @@ document.getElementById('closeModal')?.addEventListener('click', closeModal);
 document.addEventListener('DOMContentLoaded', () => {
     loadCart();
 });
+
