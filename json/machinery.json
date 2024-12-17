@@ -78,5 +78,245 @@
         "category": "Ігри",
         "image": "https://cdn.akamai.steamstatic.com/steam/apps/2050650/header.jpg",
         "description": "A modernized remake of the classic survival horror game with overhauled graphics and gameplay."
+    },
+    {
+        "id": 11,
+        "name": "Call of Duty: Modern Warfare III",
+        "price": 1899,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/2341360/header.jpg",
+        "description": "A fast-paced military shooter with a gripping campaign and multiplayer modes."
+    },
+    {
+        "id": 12,
+        "name": "Forza Horizon 5",
+        "price": 1799,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg",
+        "description": "An open-world racing experience set in beautiful landscapes with hundreds of cars."
+    },
+    {
+        "id": 13,
+        "name": "Doom Eternal",
+        "price": 699,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/782330/header.jpg",
+        "description": "An adrenaline-fueled first-person shooter where you battle demons across dimensions."
+    },
+    {
+        "id": 14,
+        "name": "Sekiro: Shadows Die Twice",
+        "price": 1249,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/814380/header.jpg",
+        "description": "An intense, skill-based action game set in Sengoku Japan where death is only the beginning."
+    },
+    {
+        "id": 15,
+        "name": "God of War",
+        "price": 1399,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg",
+        "description": "Follow Kratos and his son Atreus on a journey through Norse mythology."
+    },
+    {
+        "id": 16,
+        "name": "The Legend of Zelda: Breath of the Wild",
+        "price": 2499,
+        "category": "Ігри",
+        "image": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
+        "description": "Explore a vast, open world in Link's most breathtaking adventure yet."
+    },
+    {
+        "id": 17,
+        "name": "Final Fantasy VII Remake",
+        "price": 1999,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1462040/header.jpg",
+        "description": "A stunning reimagining of the RPG classic, featuring iconic characters and enhanced visuals."
+    },
+    {
+        "id": 18,
+        "name": "Ghost of Tsushima",
+        "price": 1699,
+        "category": "Ігри",
+        "image": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1717622497",
+        "description": "A breathtaking samurai adventure set in the open world of feudal Japan."
+    },
+    {
+        "id": 19,
+        "name": "Hades",
+        "price": 399,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+        "description": "A roguelike dungeon crawler with an engaging storyline and fast-paced combat."
+    },
+    {
+        "id": 20,
+        "name": "Half-Life: Alyx",
+        "price": 1199,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg",
+        "description": "A VR experience set between Half-Life and Half-Life 2, delivering cutting-edge gameplay."
+    },
+    {
+        "id": 21,
+        "name": "Minecraft Java Bedrock Edition",
+        "price": 599,
+        "category": "Ігри",
+        "image": "https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/key-art/Homepage_Discover-our-games_MC-Vanilla-KeyArt_864x864.jpg",
+        "description": "An iconic sandbox game allowing players to create, explore, and survive in a blocky world."
+    },
+    {
+        "id": 22,
+        "name": "Terraria",
+        "price": 199,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+        "description": "Dig, fight, explore, and build your way through endless adventures in this 2D sandbox world."
+    },
+    {
+        "id": 23,
+        "name": "GTA V",
+        "price": 999,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg",
+        "description": "Explore the sprawling open world of Los Santos with epic heists and dynamic missions."
+    },
+    {
+        "id": 24,
+        "name": "Overwatch 2",
+        "price": 0,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/2357570/header.jpg",
+        "description": "A team-based hero shooter where teamwork and strategic play lead to victory."
+    },
+    {
+        "id": 25,
+        "name": "Cyberpunk 2077: Phantom Liberty",
+        "price": 899,
+        "category": "DLC",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/2138330/header.jpg",
+        "description": "A massive story expansion for Cyberpunk 2077, featuring new characters and adventures."
+    },
+    {
+        "id": 26,
+        "name": "Destiny 2: Lightfall",
+        "price": 1200,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1085660/header.jpg",
+        "description": "A sci-fi looter shooter with a thrilling campaign and massive cooperative battles."
+    },
+    {
+        "id": 27,
+        "name": "Persona 5 Royal",
+        "price": 1599,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1687950/header.jpg",
+        "description": "Live the life of a high school student with a secret in this beloved JRPG classic."
+    },
+    {
+        "id": 28,
+        "name": "Monster Hunter: World",
+        "price": 749,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/582010/header.jpg",
+        "description": "Hunt massive monsters solo or with friends in an awe-inspiring open world."
+    },
+    {
+        "id": 29,
+        "name": "Cuphead",
+        "price": 349,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/268910/header.jpg",
+        "description": "A challenging side-scroller featuring retro visuals and imaginative boss battles."
+    },
+    {
+        "id": 30,
+        "name": "Subnautica",
+        "price": 399,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/264710/header.jpg",
+        "description": "Survive and explore an underwater alien world full of mysteries and dangers."
+    },
+    {
+        "id": 31,
+        "name": "Battlefield 2042",
+        "price": 1599,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1517290/header.jpg",
+        "description": "The latest installment in the Battlefield series, featuring large-scale futuristic warfare."
+    },
+    {
+        "id": 32,
+        "name": "Battlefield V",
+        "price": 1299,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1238810/header.jpg",
+        "description": "Experience World War II like never before with immersive multiplayer battles."
+    },
+    {
+        "id": 33,
+        "name": "Battlefield 1",
+        "price": 999,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1238840/header.jpg",
+        "description": "A dramatic World War I setting with massive multiplayer battles and stunning visuals."
+    },
+    {
+        "id": 34,
+        "name": "Battlefield 4",
+        "price": 699,
+        "category": "Ігри",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1238860/header.jpg",
+        "description": "Modern warfare with large-scale maps, dynamic destructible environments, and tactical gameplay."
+    },
+    {
+        "id": 35,
+        "name": "Battlefield 3",
+        "price": 499,
+        "category": "Ігри",
+        "image": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1238820/header.jpg?t=1734373919",
+        "description": "A groundbreaking shooter with lifelike visuals and adrenaline-pumping gameplay."
+    },
+    {
+        "id": 36,
+        "name": "Battlefield: Bad Company 2",
+        "price": 399,
+        "category": "DLC",
+        "image": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/24960/header.jpg?t=1682701509",
+        "description": "A classic Battlefield experience with a memorable campaign and explosive multiplayer."
+    },
+    {
+        "id": 37,
+        "name": "Battlefield 2",
+        "price": 349,
+        "category": "Ігри",
+        "image": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/24860/header.jpg?t=1731623680",
+        "description": "One of the defining games of modern tactical shooters with expansive battles."
+    },
+    {
+        "id": 38,
+        "name": "Battlefield Hardline",
+        "price": 449,
+        "category": "DLC",
+        "image": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1238880/capsule_616x353.jpg?t=1615894937",
+        "description": "A cops and robbers twist on the Battlefield series, focusing on urban combat and strategy."
+    },
+    {
+        "id": 39,
+        "name": "Battlefield V: Definitive Edition",
+        "price": 1599,
+        "category": "DLC",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1238810/header.jpg",
+        "description": "Includes all expansions, weapons, and skins for the ultimate WWII experience."
+    },
+    {
+        "id": 40,
+        "name": "Battlefield 1: Revolution",
+        "price": 1099,
+        "category": "DLC",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1238840/header.jpg",
+        "description": "The full Battlefield 1 experience with premium passes and DLC expansions."
     }
 ]

@@ -28,7 +28,10 @@
             <h1>Pixel Shop</h1>
         </div>
         <nav>
-            <button id="cartButton" class="steam-button">Кошик (<span id="cartCount">0</span>)</button>
+            <div class="logo-and-cart">
+                <img src="/images/shopping-cart.png" alt="Steam Logo" class="steam-logo">
+                <button id="cartButton" class="steam-button">Кошик (<span id="cartCount">0</span>)</button>
+              </div>
         </nav>
     </header>
 
@@ -38,18 +41,15 @@
             <div class="filter-section">
                 <label class="filter-label" for="categorySelect">Категорія</label>
                 <select id="categorySelect" class="steam-select">
-                    <option value="">Всі категорії</option>
-                    <option value="software">Програмне забезпечення</option>
-                    <option value="dlc">DLC</option>
                 </select>
             </div>
             <div class="filter-section">
                 <label class="filter-label" for="priceRange">Ціновий діапазон</label>
                 <div class="price-slider">
-                    <input type="range" id="minPrice" class="slider" min="0" max="10000" value="0" step="50">
+                    <input type="range" id="minPrice" class="slider" min="0" max="4000" value="0" step="50">
                     <input type="number" id="minPriceValue" value="0" readonly class="price-input">
-                    <input type="range" id="maxPrice" class="slider" min="0" max="10000" value="10000" step="50">
-                    <input type="number" id="maxPriceValue" value="10000" readonly class="price-input">
+                    <input type="range" id="maxPrice" class="slider" min="0" max="4000" value="4000" step="50">
+                    <input type="number" id="maxPriceValue" value="4000" readonly class="price-input">
                 </div>
             </div>
             <button id="filterButton" class="steam-button">Фільтрувати</button>
@@ -69,12 +69,15 @@
             <ul id="cartItems" class="steam-cart-items"></ul>
             <p class="total-price">Загальна сума: <span id="totalPrice">0</span> грн</p>
             <button id="clearCart" class="steam-button">Очистити кошик</button>
+            <a href="purchase.html" id="buyButton" class="steam-button">
+                Купити
+            </a>
         </div>
     </div>
 
     <script src="js/cart.js"></script>
     <script src="js/script.js"></script>
-    
+
 </body>
 
 </html>

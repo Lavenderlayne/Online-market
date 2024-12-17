@@ -1,28 +1,27 @@
 let products = [];
 
-// Load products from JSON
+// Завантаження продуктів з JSON
 async function loadProducts() {
     try {
         const response = await fetch('json/machinery.json');
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('Помилка мережі');
         }
         products = await response.json();
         initializePage();
     } catch (error) {
-        console.error('Error loading products:', error);
+        console.error('Помилка завантаження продуктів:', error);
     }
 }
 
-// Initialize the page with categories, products, and event listeners
+// Ініціалізація сторінки з категоріями, продуктами та обробниками подій
 function initializePage() {
     populateCategories(products);
     displayProducts(products);
-  
     addEventListeners();
 }
 
-// Populate categories in the filter dropdown
+// Заповнення категорій у фільтрах
 function populateCategories(products) {
     const categorySelect = document.getElementById('categorySelect');
     const categories = [...new Set(products.map(product => product.category))];
@@ -34,7 +33,7 @@ function populateCategories(products) {
     });
 }
 
-// Filter by category
+// Фільтрація за категорією
 function filterByCategory() {
     const selectedCategory = document.getElementById('categorySelect').value;
     const filteredProducts = selectedCategory
@@ -43,7 +42,7 @@ function filterByCategory() {
     displayProducts(filteredProducts);
 }
 
-// Filter by price range
+// Фільтрація за ціною
 function filterByPrice() {
     const minPrice = parseInt(document.getElementById('minPrice').value, 10);
     const maxPrice = parseInt(document.getElementById('maxPrice').value, 10);
@@ -51,14 +50,14 @@ function filterByPrice() {
     displayProducts(filteredProducts);
 }
 
-// Display filtered products
+// Відображення продуктів на сторінці
 function displayProducts(productsToShow) {
     const productsContainer = document.getElementById('productsContainer');
     if (!productsContainer) return;
 
-    productsContainer.innerHTML = ''; // Clear previous products
+    productsContainer.innerHTML = ''; // Очищення попереднього вмісту
     if (productsToShow.length === 0) {
-        productsContainer.innerHTML = '<p>No products found.</p>';
+        productsContainer.innerHTML = '<p>Товари не знайдено.</p>';
         return;
     }
 
@@ -69,16 +68,15 @@ function displayProducts(productsToShow) {
             <a href="product.html?id=${product.id}">
                 <img src="${product.image}" alt="${product.name}" />
                 <h2>${product.name}</h2>
-                <p>${product.description || 'No description'}</p>
-                <p>Price: ${product.price} UAH</p>
+                <p>${product.description || 'Опис відсутній'}</p>
+                <p>Ціна: ${product.price} грн</p>
             </a>
         `;
         productsContainer.appendChild(productDiv);
     });
 }
 
-
-// Event listeners for filters
+// Обробники подій для фільтрації та пошуку
 function addEventListeners() {
     document.getElementById('searchInput')?.addEventListener('input', handleSearch);
     document.getElementById('sortSelect')?.addEventListener('change', handleSort);
@@ -93,18 +91,17 @@ function addEventListeners() {
     document.getElementById('maxPrice')?.addEventListener('input', () => {
         document.getElementById('maxPriceValue').value = document.getElementById('maxPrice').value;
     });
-   
     document.getElementById('toggleFilters')?.addEventListener('click', toggleFilterDisplay);
 }
 
-// Handle search input
+// Обробка пошуку товарів
 function handleSearch(event) {
     const searchTerm = event.target.value.toLowerCase();
     const filteredProducts = products.filter(product => product.name.toLowerCase().includes(searchTerm));
     displayProducts(filteredProducts);
 }
 
-// Handle sorting of products
+// Обробка сортування товарів
 function handleSort(event) {
     const sortBy = event.target.value;
     const sortedProducts = [...products].sort((a, b) => {
@@ -117,15 +114,13 @@ function handleSort(event) {
     displayProducts(sortedProducts);
 }
 
-// Toggle filters display
+// Перемикач відображення фільтрів
 function toggleFilterDisplay() {
     const filterOptions = document.getElementById('filterOptions');
     filterOptions.style.display = filterOptions.style.display === 'none' ? 'block' : 'none';
 }
 
-
-
-// Load products and cart on page load
+// Завантаження продуктів під час завантаження сторінки
 document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
 });
