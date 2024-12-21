@@ -460,3 +460,32 @@ a {
 a:hover {
     color: #c3c3c3;
 }
+
+a.steam-button {
+    background: linear-gradient(45deg, #ff8c00, #ffcc00);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5);
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+a.steam-button:hover {
+    background: linear-gradient(45deg, #28a745, #218838); /* Зелений градієнт */
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.7);
+}
+
+.steam-modal-content {
+    text-align: center; /* Центрує весь текст і блоки всередині контейнера */
+}
+
+.steam-modal-content .steam-button {
+    display: inline-block; /* Зберігає природну ширину кнопки */
+    margin: 0 auto; /* Центрує кнопку */
+}
