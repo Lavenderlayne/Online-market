@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деталі товару</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="steam-header">
+        <div class="logo">
+            <img src="/images/pixel-logo.png" alt="Steam Logo" class="steam-logo">
+            <h1><a href="/" class="logo">Pixel Shop</a></h1>
+        </div>
+        <nav>
+            <div class="logo-and-cart">
+                <img src="/images/shopping-cart.png" alt="Steam Logo" class="steam-logo">
+                <button id="cartButton" class="steam-button">Кошик (<span id="cartCount">0</span>)</button>
+              </div>
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <div class="product-info">
+            <img id="productImage" src="" alt="Зображення товару">
+            <div class="product-description">
+                <h1 id="productName">Назва товару</h1>
+                <p id="productPrice">Ціна: грн</p>
+                <p id="productCategory">Категорія: </p>
+                <p id="productDescription">Опис відсутній</p>
+                <button id="addToCartButton" class="btn-add-to-cart">Додати до кошика</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Магазин. Усі права захищено.</p>
+    </footer>
+
+    <div id="cartModal" class="modal steam-modal">
+        <div class="modal-content steam-modal-content">
+            <span id="closeModal" class="close-modal">&times;</span>
+            <h2>Ваш кошик</h2>
+            <ul id="cartItems" class="steam-cart-items"></ul>
+            <p class="total-price">Загальна сума: <span id="totalPrice">0</span> грн</p>
+            <button id="clearCart" class="steam-button">Очистити кошик</button>
+            <a href="purchase.html" id="buyButton" class="steam-button">
+                Купити
+            </a>
+
+        </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+</body>
+
+</html>

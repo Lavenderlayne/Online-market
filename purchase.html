@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підтвердження покупки - Pixel Shop</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="steam-header">
+        <div class="logo">
+            <img src="/images/pixel-logo.png" alt="Pixel Shop Logo" class="steam-logo">
+            <h1><a href="/" class="logo">Pixel Shop</a></h1>
+        </div>
+    </header>
+
+    <main class="purchase-page">
+        <h2>Підтвердження покупки</h2>
+
+        <div class="purchase-info">
+            <div class="purchase-info">
+                <h3>Ваше замовлення:</h3>
+                <ul id="cartItems" class="steam-cart-items"></ul>
+                <p class="total-price">Загальна сума: <span id="totalPrice">0</span> грн</p>
+            
+                <!-- Address and Payment Section -->
+            
+                <h3>Адреса для доставки:</h3>
+                <label for="address">Введіть вашу адресу:</label>
+                <input type="text" id="address" placeholder="Адреса доставки" required>
+            
+                <h3>Оплата:</h3>
+                <p>Виберіть метод оплати:</p>
+                <select id="paymentMethod" required>
+                    <option value="creditCard">Кредитна карта</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cashOnDelivery">Готівкою при отриманні</option>
+                </select>
+            
+                <button id="confirmPurchaseButton" class="steam-button">Підтвердити покупку</button>
+            </div>
+            
+    </main>
+
+
+
+    <script src="js/cart.js"></script>
+    <script src="js/purchase.js"></script>
+</body>
+</html>
